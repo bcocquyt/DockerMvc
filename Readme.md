@@ -437,6 +437,10 @@ Output:
 ]
 ```
 
+It takes some time for the container to get started, but finally, you should be able to surf to: <azure-webapp-name>.azurewebsites.net.
+
+Well done !
+
 References:
 * http://www.frankysnotes.com/2018/09/what-happen-when-you-mix-aspnet-core.html
 * https://github.com/Azure/azure-cli/issues/7874 
