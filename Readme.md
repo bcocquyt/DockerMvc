@@ -1,4 +1,4 @@
-# Build and depoy a DotNet application to a docker container on Azure
+# Build and depoy an AspDotNet application to a docker container on Azure
 
 Create DotNet MVC Project
 ```
@@ -250,7 +250,7 @@ Output:
 ```
 
 Create WebApp
-Not all runtimes seem to work, this one works for me. The value is not really important as we are going to use our own docker container.
+Not all runtimes seem to work, this one works for me. The value is not really important as we are going to use our own docker container. I tried some values from the list returned by: az webapp list-runtimes, but some of them work, and some don't. Don't ask me why...
 ```
 az webapp create -g <resource-group-name> -p <consumption-plan-name> -n <azure-webapp-name> --% --runtime "node|8.1"
 ```
@@ -436,3 +436,7 @@ Output:
   }
 ]
 ```
+
+References:
+* http://www.frankysnotes.com/2018/09/what-happen-when-you-mix-aspnet-core.html
+* https://github.com/Azure/azure-cli/issues/7874 
